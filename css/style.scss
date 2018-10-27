@@ -1,0 +1,130 @@
+/* reset básico */
+
+*, body{
+	margin: 0px;
+	padding: 0px;
+}
+
+html, body{
+	height: 100%;
+	min-height: 100%;
+}
+
+body{
+	font-family: "Karla";
+	background: #F4F4F4;
+}
+
+
+h1, p{
+	margin: 0px;
+	padding: 0px;
+}
+
+img{
+	max-width: 100%;
+}
+
+/*
+	Main
+*/
+
+.main-wrapper{
+  	min-height: 100%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	background: url(../img/fundo.jpg);
+  	background-size: cover;
+  	background-position: center;
+}
+
+/*
+	Conteúdo
+*/
+
+.container{
+	width: 300px;
+	height: 350px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	margin: 4%;
+	padding: 4%;
+	text-align: center;
+	background: #FFFFFF;
+	border-top: 12px solid #3196C3;
+	box-shadow: 2px 0px 25px 0px rgba(0,0,0,0.50);
+}
+
+
+/*
+	Foto de avatar
+*/
+
+.foto img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+
+/*
+	Textos
+*/
+
+.textos{
+	color: #444;
+}
+
+.textos h1{
+	font-size: 2em;
+}
+
+.textos h1, p{
+	padding: 2% 0;
+}
+
+.link-texto{
+	color: #444;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.link-texto:hover{
+	color: #fff;
+	background: #3196C3;
+}
+
+/*
+	Redes sociais
+*/
+
+.social{
+	padding: 8px;
+	cursor: pointer;
+}
+
+.social i{
+	color: #C4C4C4;
+}
+
+.social i:hover{
+	color: #3196C3;
+}
+
+
+/*
+	Media Queries
+*/
+
+@media screen and (min-width: 768px){
+	.foto img{
+		width: 150px;
+		height: 150px;
+		border-radius: 70%;
+	}
+}
+
